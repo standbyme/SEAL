@@ -5,6 +5,7 @@
 #include "seal/util/uintarith.h"
 #include "seal/util/uintcore.h"
 
+#include "seal/util/cuda/main.cuh"
 #ifdef SEAL_USE_INTEL_HEXL
 #include "hexl/hexl.hpp"
 #endif
@@ -82,6 +83,7 @@ namespace seal
                 std::uint64_t sum = get<0>(I) + get<1>(I);
                 get<2>(I) = SEAL_COND_SELECT(sum >= modulus_value, sum - modulus_value, sum);
             });
+            haha(2,3);
 #endif
         }
 

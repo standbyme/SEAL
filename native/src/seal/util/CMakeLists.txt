@@ -67,4 +67,5 @@ install(
         ${SEAL_INCLUDES_INSTALL_DIR}/seal/util
 )
 
+add_subdirectory(cuda)
 set(SEAL_SOURCE_FILES ${SEAL_SOURCE_FILES} PARENT_SCOPE)

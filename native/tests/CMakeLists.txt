@@ -62,7 +62,7 @@ if(SEAL_BUILD_TESTS)
     endif()
 
     # In Debug mode, enable AddressSanitizer (and LeakSanitizer) on Unix-like platforms.
-    if(SEAL_DEBUG AND UNIX)
+    if(FALSE AND SEAL_DEBUG AND UNIX)
         # On macOS, only AddressSanitizer is enabled.
         # On Linux, LeakSanitizer is enabled by default.
         target_compile_options(sealtest PUBLIC -fsanitize=address)
