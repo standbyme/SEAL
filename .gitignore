@@ -641,3 +641,4 @@ FodyWeavers.xsd
 .idea
 cmake-build-debug
 cmake-build-release
+cmake-build-release-coverage
